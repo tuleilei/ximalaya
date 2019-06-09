@@ -1,0 +1,99 @@
+.top._35Tv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 0 auto
+}
+
+.top .tabsWrapper._35Tv {
+    z-index: 20;
+    height: 50px;
+    line-height: 50px
+}
+
+.top .menuList._35Tv {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #f3f4f5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(100% - 100px)
+}
+
+.top .listItem._35Tv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.top .listItem .ranking._35Tv {
+    margin: 18px 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 34px;
+    flex: 0 0 34px;
+    height: 19px;
+    line-height: 19px;
+    color: #40404c;
+    text-align: center;
+    font-size: 16px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 700;
+    font-weight: 600
+}
+
+.top .listItem .albumWrapper._35Tv {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100px;
+    position: relative
+}
+
+.top .listItem .albumWrapper._35Tv::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #eaeaea;
+    -webkit-transform: scaleY(.5);
+    -ms-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%
+}
+
+.top .listItem:not(:nth-child(n+4)) .ranking._35Tv {
+    background: 50%/18px no-repeat;
+    font-size: 0
+}
+
+.top .listItem:first-child .ranking._35Tv {
+    background-image: url(//s1.xmcdn.com/sr012018/ximalaya-mobile/last/dist/images/img_rank_first_4dd5bad.png)
+}
+
+.top .listItem:nth-child(2) .ranking._35Tv {
+    background-image: url(//s1.xmcdn.com/sr012018/ximalaya-mobile/last/dist/images/img_rank_second_977bd19.png)
+}
+
+.top .listItem:nth-child(3) .ranking._35Tv {
+    background-image: url(//s1.xmcdn.com/sr012018/ximalaya-mobile/last/dist/images/img_rank_third_1a96b0c.png)
+}
