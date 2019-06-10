@@ -97,3 +97,7 @@
 .top .listItem:nth-child(3) .ranking._35Tv {
     background-image: url(//s1.xmcdn.com/sr012018/ximalaya-mobile/last/dist/images/img_rank_third_1a96b0c.png)
 }
+.select_z8X{
+    transform:translateY(-2px) scale(1.2857142857142858);
+    margin-left:20px
+}

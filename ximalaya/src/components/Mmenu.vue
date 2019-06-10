@@ -57,12 +57,12 @@ export default Vue.extend({
     scroll() {
       if (window.scrollY >= 95) {
         this.bool = !0;
-        console.log(!this.bool)
+        // console.log(!this.bool)
       } else {
         this.bool = 0;
         
       }
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
     },
     destroyed() {
       window.onscroll = null;

@@ -8,6 +8,7 @@ export default new Vuex.Store({
     
     isShowMenu:true,
     isShowHeader:true,
+    isShowPaiHang:true,
   },
   mutations: {
 
