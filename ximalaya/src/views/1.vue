@@ -3,8 +3,7 @@
         <h1>首页</h1>
         <section class="floor-nav" id="floorNavList">
             <ul class="nav-list">
-                <li class="nav-list-item" v-for="(item, index) in floorNav"
-                 :key="item.id" @click="setFloorNavMountClick(index)">{{ item.name }}</li>
+                <li class="nav-list-item" v-for="(item, index) in floorNav" :key="item.id" @click="setFloorNavMountClick(index)">{{ item.name }}</li>
             </ul>
         </section>
         <section class="floor-item" v-for="item in floorList" :key="item.id">
@@ -108,11 +107,9 @@
          */
         floorSrcollAddEventListener () {
             var _this = this;
-            let nav_item = document.getElementById('floorNavList').getElementsByClassName('nav-list-item');
-                console.log(nav_item)
+            let nav_item = document.getElementById('floorNavList').getElementsByClassName('nav-list-item'),
                 floor_item = document.getElementsByClassName('floor-item');
                 nav_item[0].className = 'nav-list-item active';
-                console.log(nav_item[0])
             window.onscroll = function () {
                 let window_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                 for (let i = 0, len = floor_item.length; i < len; i++) {
