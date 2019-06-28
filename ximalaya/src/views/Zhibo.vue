@@ -15,6 +15,7 @@
       <div class="floor-item-box">
         <h2>{{ item.name }}</h2>
       </div>
+      <video preload="auto" src="blob:https://www.bilibili.com/bf6de06d-f112-4186-b8d2-5ddd87ee9423"></video>
     </section>
   </div>
 </template>
